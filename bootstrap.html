@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Framework - ePortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code"></i> My ePortfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack Development</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="bootstrap.html">Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Page Header -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4 fw-bold mb-3">
+                    <i class="fab fa-bootstrap text-purple"></i> Bootstrap Framework
+                </h1>
+                <p class="lead">Rapid responsive web development with component-based design</p>
+            </div>
+        </div>
+
+        <!-- Introduction -->
+        <section class="mb-5">
+            <h2><i class="fas fa-info-circle text-info"></i> What is Bootstrap?</h2>
+            <p><strong>Bootstrap</strong> is the world's most popular front-end framework for developing responsive, mobile-first websites. It provides a comprehensive collection of HTML, CSS, and JavaScript components that speed up development while ensuring consistency and accessibility.</p>
+
+            <div class="alert alert-info">
+                <i class="fas fa-lightbulb"></i>
+                <strong>Key Benefits:</strong> Bootstrap reduces development time by providing pre-built, tested components while maintaining design consistency across projects.
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                        <h5>Mobile First</h5>
+                        <p>Responsive design by default</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <i class="fas fa-puzzle-piece fa-3x text-success mb-3"></i>
+                        <h5>Component Based</h5>
+                        <p>Reusable UI components</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <i class="fas fa-palette fa-3x text-warning mb-3"></i>
+                        <h5>Customizable</h5>
+                        <p>Easy theme customization</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid System -->
+        <section class="mb-5">
+            <h2><i class="fas fa-th text-primary"></i> Bootstrap Grid System</h2>
+            <p>Bootstrap's 12-column grid system uses Flexbox for flexible, responsive layouts across all device sizes.</p>
+
+            <div class="example-container">
+                <div class="mb-4">
+                    <h5>Basic Grid Example</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="bg-primary text-white p-3 text-center rounded">col-md-4</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-success text-white p-3 text-center rounded">col-md-4</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-warning text-white p-3 text-center rounded">col-md-4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Responsive Breakpoints</h5>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="bg-info text-white p-3 text-center rounded mb-2">Responsive</div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="bg-secondary text-white p-3 text-center rounded mb-2">Columns</div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="bg-danger text-white p-3 text-center rounded mb-2">Adjust</div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="bg-dark text-white p-3 text-center rounded mb-2">Automatically</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Advanced Grid Features</h5>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="bg-purple text-white p-3 text-center rounded">Main Content (col-md-8)</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="bg-info text-white p-2 text-center rounded mb-2">Sidebar</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="bg-warning text-white p-2 text-center rounded">Widget 1</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="bg-success text-white p-2 text-center rounded">Widget 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="HTML">
+                <pre><code>&lt;!-- Basic Grid Structure --&gt;
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4"&gt;Column 1&lt;/div&gt;
+        &lt;div class="col-md-4"&gt;Column 2&lt;/div&gt;
+        &lt;div class="col-md-4"&gt;Column 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Responsive Breakpoints --&gt;
+&lt;div class="col-12 col-sm-6 col-md-4 col-lg-3"&gt;
+    &lt;!-- 
+    xs: 12 columns (100% width)
+    sm: 6 columns (50% width)  
+    md: 4 columns (33% width)
+    lg: 3 columns (25% width)
+    --&gt;
+&lt;/div&gt;
+
+&lt;!-- Grid Utilities --&gt;
+&lt;div class="row justify-content-center align-items-center"&gt;
+    &lt;div class="col-auto"&gt;Auto-width column&lt;/div&gt;
+    &lt;div class="col"&gt;Flexible column&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <h3>Grid System Breakpoints:</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Breakpoint</th>
+                            <th>Class prefix</th>
+                            <th>Dimensions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Extra small</td><td>.col-</td><td>&lt;576px</td></tr>
+                        <tr><td>Small</td><td>.col-sm-</td><td>≥576px</td></tr>
+                        <tr><td>Medium</td><td>.col-md-</td><td>≥768px</td></tr>
+                        <tr><td>Large</td><td>.col-lg-</td><td>≥992px</td></tr>
+                        <tr><td>Extra large</td><td>.col-xl-</td><td>≥1200px</td></tr>
+                        <tr><td>Extra extra large</td><td>.col-xxl-</td><td>≥1400px</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Components -->
+        <section class="mb-5">
+            <h2><i class="fas fa-cubes text-success"></i> Bootstrap Components</h2>
+            <p>Bootstrap provides a rich set of pre-built components for common UI patterns.</p>
+
+            <div class="example-container">
+                <!-- Cards -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h5>Cards</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-star text-warning"></i> Featured
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Image Card</h5>
+                                <div class="bg-light p-4 text-center rounded mb-3">
+                                    <i class="fas fa-image fa-3x text-muted"></i>
+                                </div>
+                                <p class="card-text">Card with image placeholder.</p>
+                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">List Card</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Item 1</li>
+                                    <li class="list-group-item">Item 2</li>
+                                    <li class="list-group-item">Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h5>Buttons</h5>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-primary me-2">Primary</button>
+                            <button type="button" class="btn btn-secondary me-2">Secondary</button>
+                            <button type="button" class="btn btn-success me-2">Success</button>
+                            <button type="button" class="btn btn-danger me-2">Danger</button>
+                            <button type="button" class="btn btn-warning me-2">Warning</button>
+                            <button type="button" class="btn btn-info me-2">Info</button>
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-outline-primary me-2">Outline Primary</button>
+                            <button type="button" class="btn btn-outline-success me-2">Outline Success</button>
+                            <button type="button" class="btn btn-lg btn-primary me-2">Large</button>
+                            <button type="button" class="btn btn-sm btn-secondary">Small</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alerts -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h5>Alerts</h5>
+                        <div class="alert alert-primary d-flex align-items-center" role="alert">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <div>A simple primary alert with an icon!</div>
+                        </div>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Well done!</strong> You successfully read this important alert message.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badges and Progress -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h5>Badges</h5>
+                        <p>Example heading <span class="badge bg-secondary">New</span></p>
+                        <span class="badge bg-primary">Primary</span>
+                        <span class="badge bg-success">Success</span>
+                        <span class="badge bg-danger">Danger</span>
+                        <span class="badge bg-warning text-dark">Warning</span>
+                        <span class="badge bg-info">Info</span>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Progress Bars</h5>
+                        <div class="progress mb-2">
+                            <div class="progress-bar" style="width: 75%">75%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 40%"></div>
+                            <div class="progress-bar bg-warning" style="width: 20%"></div>
+                            <div class="progress-bar bg-danger" style="width: 15%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="HTML">
+                <pre><code>&lt;!-- Card Component --&gt;
+&lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;Featured&lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Card Title&lt;/h5&gt;
+        &lt;p class="card-text"&gt;Quick example text.&lt;/p&gt;
+        &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Button Variants --&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-success"&gt;Outline&lt;/button&gt;
+&lt;button type="button" class="btn btn-lg btn-danger"&gt;Large&lt;/button&gt;
+
+&lt;!-- Alert with Dismissal --&gt;
+&lt;div class="alert alert-warning alert-dismissible fade show"&gt;
+    &lt;strong&gt;Warning!&lt;/strong&gt; Better check yourself.
+    &lt;button type="button" class="btn-close" data-bs-dismiss="alert"&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- JavaScript Components -->
+        <section class="mb-5">
+            <h2><i class="fas fa-cog text-warning"></i> JavaScript Components</h2>
+            <p>Bootstrap includes interactive components powered by JavaScript for enhanced user experience.</p>
+
+            <div class="example-container">
+                <!-- Modal -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h5>Modal</h5>
+                        <button type="button" class="btn btn-primary" id="modalDemo">
+                            <i class="fas fa-external-link-alt"></i> Launch Modal
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carousel -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h5>Carousel</h5>
+                        <div id="demoCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="bg-primary text-white p-5 text-center">
+                                        <h4>First slide</h4>
+                                        <p>Some representative placeholder content.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="bg-success text-white p-5 text-center">
+                                        <h4>Second slide</h4>
+                                        <p>Some representative placeholder content.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="bg-warning text-white p-5 text-center">
+                                        <h4>Third slide</h4>
+                                        <p>Some representative placeholder content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demoCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demoCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdowns and Tooltips -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h5>Dropdown</h5>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Tooltips & Popovers</h5>
+                        <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" title="Tooltip on top">
+                            Tooltip
+                        </button>
+                        <button type="button" class="btn btn-info" data-bs-toggle="popover" title="Popover title" 
+                                data-bs-content="And here's some amazing content.">
+                            Popover
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Accordion -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h5>Accordion</h5>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        Accordion Item #1
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        This is the first item's accordion body with some placeholder content.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        Accordion Item #2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        This is the second item's accordion body.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="HTML">
+                <pre><code>&lt;!-- Modal Trigger --&gt;
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+    Launch Modal
+&lt;/button&gt;
+
+&lt;!-- Carousel --&gt;
+&lt;div id="carouselExample" class="carousel slide" data-bs-ride="carousel"&gt;
+    &lt;div class="carousel-inner"&gt;
+        &lt;div class="carousel-item active"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev"&gt;
+        &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Tooltip --&gt;
+&lt;button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip text"&gt;
+    Tooltip
+&lt;/button&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- Utility Classes -->
+        <section class="mb-5">
+            <h2><i class="fas fa-tools text-info"></i> Utility Classes</h2>
+            <p>Bootstrap's utility classes provide quick styling options without writing custom CSS.</p>
+
+            <div class="example-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Spacing Utilities</h5>
+                        <div class="bg-light p-3 mb-3">
+                            <div class="bg-primary text-white p-2 m-3">m-3 (margin)</div>
+                            <div class="bg-success text-white p-4">p-4 (padding)</div>
+                            <div class="bg-warning text-white px-3 py-2 mt-2">px-3 py-2</div>
+                        </div>
+
+                        <h5>Text Utilities</h5>
+                        <p class="text-primary">Primary text</p>
+                        <p class="text-success fw-bold">Bold success text</p>
+                        <p class="text-muted fst-italic">Muted italic text</p>
+                        <p class="text-decoration-underline">Underlined text</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5>Display & Position</h5>
+                        <div class="bg-light p-3 mb-3">
+                            <div class="d-inline-block bg-primary text-white p-2 me-2">inline-block</div>
+                            <div class="d-inline-block bg-success text-white p-2">inline-block</div>
+                        </div>
+                        <div class="bg-light p-3 position-relative">
+                            <div class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">top-start</div>
+                            <div class="position-absolute top-0 end-0 bg-warning text-white px-2 py-1">top-end</div>
+                            <div class="text-center py-4">Positioned elements</div>
+                        </div>
+
+                        <h5>Flexbox Utilities</h5>
+                        <div class="d-flex justify-content-between bg-light p-3">
+                            <div class="bg-primary text-white p-2">Item 1</div>
+                            <div class="bg-success text-white p-2">Item 2</div>
+                            <div class="bg-warning text-white p-2">Item 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="HTML">
+                <pre><code>&lt;!-- Spacing: m/p-{side}-{size} --&gt;
+&lt;div class="m-3"&gt;margin on all sides&lt;/div&gt;
+&lt;div class="px-4 py-2"&gt;horizontal and vertical padding&lt;/div&gt;
+&lt;div class="mt-auto"&gt;margin-top auto&lt;/div&gt;
+
+&lt;!-- Typography --&gt;
+&lt;p class="text-primary fw-bold fs-4"&gt;Large bold primary text&lt;/p&gt;
+&lt;p class="text-muted fst-italic text-decoration-underline"&gt;Styled text&lt;/p&gt;
+
+&lt;!-- Display --&gt;
+&lt;div class="d-flex justify-content-center align-items-center"&gt;
+&lt;div class="d-none d-md-block"&gt;Hidden on mobile&lt;/div&gt;
+
+&lt;!-- Colors --&gt;
+&lt;div class="bg-primary text-white"&gt;Primary background&lt;/div&gt;
+&lt;div class="border border-success rounded"&gt;Success border&lt;/div&gt;</code></pre>
+            </div>
+
+            <h3>Common Utility Patterns:</h3>
+            <div class="table-responsive">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Classes</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Spacing</td><td>m-*, p-*, mx-*, py-*</td><td>m-3, px-4, mt-auto</td></tr>
+                        <tr><td>Colors</td><td>text-*, bg-*, border-*</td><td>text-primary, bg-success</td></tr>
+                        <tr><td>Display</td><td>d-*, d-*-*</td><td>d-flex, d-none d-md-block</td></tr>
+                        <tr><td>Position</td><td>position-*, top-*, start-*</td><td>position-relative, top-0</td></tr>
+                        <tr><td>Flexbox</td><td>justify-content-*, align-items-*</td><td>justify-content-center</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Theme Customization -->
+        <section class="mb-5">
+            <h2><i class="fas fa-palette text-danger"></i> Theme Customization</h2>
+            <p>Bootstrap 5 uses CSS custom properties, making it easy to customize themes dynamically.</p>
+
+            <div class="example-container">
+                <div class="mb-3">
+                    <h5>Theme Switcher</h5>
+                    <button class="btn btn-outline-primary theme-btn active me-2" data-theme="default">Default</button>
+                    <button class="btn btn-outline-success theme-btn me-2" data-theme="custom-theme">Custom</button>
+                    <button class="btn btn-outline-dark theme-btn" data-theme="dark-theme">Dark</button>
+                </div>
+
+                <div id="customThemeDemo" class="border rounded p-4">
+                    <h5>Theme Demo</h5>
+                    <p>This section demonstrates theme customization using CSS variables.</p>
+                    <button class="btn btn-primary me-2">Primary Button</button>
+                    <button class="btn btn-success me-2">Success Button</button>
+                    <div class="alert alert-primary mt-3">
+                        <strong>Notice:</strong> This alert adapts to the selected theme.
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 60%">60%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="CSS">
+                <pre><code>/* Custom Theme with CSS Variables */
+.custom-theme {
+    --bs-primary: #6f42c1;
+    --bs-primary-rgb: 111, 66, 193;
+    --bs-success: #10d876;
+    --bs-success-rgb: 16, 216, 118;
+    --bs-body-bg: #f8f9fc;
+    --bs-body-color: #2c3e50;
+}
+
+.custom-theme .btn-primary {
+    background: linear-gradient(45deg, var(--bs-primary), #8f6bd1);
+    border: none;
+}
+
+.custom-theme .btn-primary:hover {
+    background: linear-gradient(45deg, #5a3296, var(--bs-primary));
+    transform: translateY(-1px);
+}
+
+/* Dark Theme */
+.dark-theme {
+    --bs-body-bg: #212529;
+    --bs-body-color: #ffffff;
+    --bs-primary: #0d6efd;
+    --bs-border-color: #495057;
+}
+
+/* SCSS Customization (before compilation) */
+$primary: #6f42c1;
+$success: #10d876;
+$border-radius: 0.5rem;
+$font-family-sans-serif: 'Inter', sans-serif;
+
+@import "bootstrap/scss/bootstrap";</code></pre>
+            </div>
+
+            <h3>Customization Methods:</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>CSS Variables (Runtime)</h5>
+                    <ul>
+                        <li>Real-time theme switching</li>
+                        <li>No recompilation needed</li>
+                        <li>JavaScript can modify values</li>
+                        <li>Browser support required</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Sass Variables (Build-time)</h5>
+                    <ul>
+                        <li>Complete customization</li>
+                        <li>Smaller file sizes</li>
+                        <li>Better browser support</li>
+                        <li>Requires build process</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Practices -->
+        <section class="mb-5">
+            <h2><i class="fas fa-star text-success"></i> Bootstrap Best Practices</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Performance</h5>
+                    <ul>
+                        <li>Include only needed components</li>
+                        <li>Use CDN for faster delivery</li>
+                        <li>Minimize custom overrides</li>
+                        <li>Optimize images and assets</li>
+                        <li>Enable CSS/JS minification</li>
+                    </ul>
+
+                    <h5>Accessibility</h5>
+                    <ul>
+                        <li>Use semantic HTML elements</li>
+                        <li>Include proper ARIA attributes</li>
+                        <li>Ensure keyboard navigation</li>
+                        <li>Maintain color contrast ratios</li>
+                        <li>Test with screen readers</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <h5>Responsive Design</h5>
+                    <ul>
+                        <li>Mobile-first approach</li>
+                        <li>Use appropriate breakpoints</li>
+                        <li>Test on multiple devices</li>
+                        <li>Consider touch interactions</li>
+                        <li>Optimize for different screen densities</li>
+                    </ul>
+
+                    <h5>Maintenance</h5>
+                    <ul>
+                        <li>Keep Bootstrap version updated</li>
+                        <li>Document custom modifications</li>
+                        <li>Use consistent naming conventions</li>
+                        <li>Separate custom CSS from Bootstrap</li>
+                        <li>Regular code reviews and refactoring</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="mb-5">
+            <div class="alert alert-primary">
+                <h3><i class="fas fa-graduation-cap"></i> Bootstrap Summary</h3>
+                <p><strong>Bootstrap</strong> accelerates web development by providing a comprehensive framework of responsive components, utilities, and JavaScript interactions. It enables consistent, accessible, and mobile-first design.</p>
+
+                <p>Key advantages:</p>
+                <ul>
+                    <li><strong>Grid System:</strong> Flexible, responsive 12-column layout system</li>
+                    <li><strong>Components:</strong> Pre-built, tested UI components</li>
+                    <li><strong>JavaScript:</strong> Interactive components without custom JS</li>
+                    <li><strong>Utilities:</strong> Rapid styling with utility classes</li>
+                    <li><strong>Customization:</strong> Easy theming with CSS variables or Sass</li>
+                    <li><strong>Community:</strong> Large ecosystem and extensive documentation</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="demoModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bootstrap Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This is a Bootstrap modal dialog. It demonstrates the JavaScript component functionality.</p>
+                    <p>Modals are built with HTML, CSS, and JavaScript. They're positioned over everything else in the document and remove scroll from the body so that modal content scrolls instead.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Full Stack Development ePortfolio</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>CET138 Full Stack Development Module</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        .text-purple { color: #6f42c1 !important; }
+        .bg-purple { background-color: #6f42c1 !important; }
+        .btn-outline-purple { color: #6f42c1; border-color: #6f42c1; }
+        .btn-outline-purple:hover { background-color: #6f42c1; border-color: #6f42c1; color: white; }
+
+        .custom-theme {
+            --bs-primary: #6f42c1;
+            --bs-success: #10d876;
+            --bs-body-bg: #f8f9fc;
+        }
+
+        .custom-theme .btn-primary {
+            background: linear-gradient(45deg, var(--bs-primary), #8f6bd1);
+            border: none;
+        }
+
+        .dark-theme {
+            --bs-body-bg: #2c3e50;
+            --bs-body-color: #ecf0f1;
+            background-color: var(--bs-body-bg);
+            color: var(--bs-body-color);
+        }
+    </style>
+</body>
+</html>

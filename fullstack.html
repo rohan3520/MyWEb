@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Development - ePortfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code"></i> My ePortfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="fullstack.html">Full Stack Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html.html">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="css.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootstrap.html">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript.html">JavaScript</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Page Header -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4 fw-bold mb-3">
+                    <i class="fas fa-layers text-primary"></i> What is Full Stack Development?
+                </h1>
+                <p class="lead">Understanding the complete web development ecosystem from client to server</p>
+            </div>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2><i class="fas fa-question-circle text-info"></i> Definition and Overview</h2>
+                    <p>Full Stack Development refers to the practice of working with both the <strong>front-end (client-side)</strong> and <strong>back-end (server-side)</strong> portions of a web application. A full stack developer is proficient in multiple programming languages and frameworks, capable of handling everything from user interface design to database management and server configuration.</p>
+
+                    <p>The term "stack" refers to the collection of technologies used together to create a complete web application. Full stack developers understand how these technologies interact and can work across the entire technology stack to build end-to-end solutions.</p>
+
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Key Point:</strong> Full stack development is not about being an expert in everything, but rather having a broad understanding of how different technologies work together to create cohesive web applications.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Visualization -->
+        <section class="mb-5">
+            <h2><i class="fas fa-sitemap text-success"></i> Full Stack Architecture</h2>
+            <p>The following diagram illustrates the typical full stack web application architecture:</p>
+
+            <div class="example-container">
+                <div class="row text-center">
+                    <!-- Client Side -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-primary">
+                            <div class="card-header bg-primary text-white">
+                                <h4><i class="fas fa-desktop"></i> Client-Side (Front-End)</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="fab fa-html5 fa-2x text-danger"></i>
+                                    <h5>HTML</h5>
+                                    <p>Structure & Content</p>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fab fa-css3-alt fa-2x text-info"></i>
+                                    <h5>CSS</h5>
+                                    <p>Styling & Layout</p>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fab fa-js-square fa-2x text-warning"></i>
+                                    <h5>JavaScript</h5>
+                                    <p>Interactivity & Logic</p>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fab fa-react fa-2x text-info"></i>
+                                    <h5>Frameworks</h5>
+                                    <p>React, Vue, Angular</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Communication Layer -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-warning">
+                            <div class="card-header bg-warning text-dark">
+                                <h4><i class="fas fa-exchange-alt"></i> Communication</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="fas fa-globe fa-2x text-primary"></i>
+                                    <h5>HTTP/HTTPS</h5>
+                                    <p>Protocol</p>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fas fa-code fa-2x text-success"></i>
+                                    <h5>REST API</h5>
+                                    <p>Endpoints</p>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fas fa-file-code fa-2x text-info"></i>
+                                    <h5>JSON</h5>
+                                    <p>Data Format</p>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fas fa-plug fa-2x text-warning"></i>
+                                    <h5>AJAX/Fetch</h5>
+                                    <p>Async Requests</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Server Side -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-success">
+                            <div class="card-header bg-success text-white">
+                                <h4><i class="fas fa-server"></i> Server-Side (Back-End)</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="fab fa-node-js fa-2x text-success"></i>
+                                    <h5>Server</h5>
+                                    <p>Node.js, Python, PHP</p>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fas fa-database fa-2x text-primary"></i>
+                                    <h5>Database</h5>
+                                    <p>MySQL, MongoDB</p>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fas fa-shield-alt fa-2x text-danger"></i>
+                                    <h5>Security</h5>
+                                    <p>Authentication, Authorization</p>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fas fa-cloud fa-2x text-info"></i>
+                                    <h5>Deployment</h5>
+                                    <p>AWS, Heroku, Digital Ocean</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Layers -->
+        <section class="mb-5">
+            <h2><i class="fas fa-layer-group text-warning"></i> Understanding the Stack Layers</h2>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Front-End (Client-Side) Technologies</h3>
+                    <p>The front-end is everything the user interacts with directly. It runs in the user's web browser and is responsible for:</p>
+                    <ul>
+                        <li><strong>User Interface (UI):</strong> Visual elements, layouts, forms</li>
+                        <li><strong>User Experience (UX):</strong> Interactions, animations, responsiveness</li>
+                        <li><strong>Client-Side Logic:</strong> Form validation, dynamic content updates</li>
+                        <li><strong>API Communication:</strong> Sending requests to and receiving data from servers</li>
+                    </ul>
+
+                    <h4>Core Technologies:</h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="95%" style="width: 0%"></div>
+                            </div>
+                            <strong>HTML5</strong> - Structure & Semantics
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="90%" style="width: 0%"></div>
+                            </div>
+                            <strong>CSS3</strong> - Styling & Layout
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="85%" style="width: 0%"></div>
+                            </div>
+                            <strong>JavaScript</strong> - Interactivity
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="80%" style="width: 0%"></div>
+                            </div>
+                            <strong>Bootstrap</strong> - CSS Framework
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3>Back-End (Server-Side) Technologies</h3>
+                    <p>The back-end handles server-side logic, database operations, and serves data to the front-end:</p>
+                    <ul>
+                        <li><strong>Server Logic:</strong> Business rules, data processing, authentication</li>
+                        <li><strong>Database Management:</strong> Data storage, retrieval, and manipulation</li>
+                        <li><strong>API Development:</strong> Creating endpoints for front-end communication</li>
+                        <li><strong>Security:</strong> User authentication, data validation, protection</li>
+                    </ul>
+
+                    <h4>Popular Technologies:</h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="75%" style="width: 0%"></div>
+                            </div>
+                            <strong>Node.js</strong> - JavaScript Runtime
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="70%" style="width: 0%"></div>
+                            </div>
+                            <strong>Python</strong> - Django/Flask
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="65%" style="width: 0%"></div>
+                            </div>
+                            <strong>MySQL</strong> - Relational Database
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="60%" style="width: 0%"></div>
+                            </div>
+                            <strong>MongoDB</strong> - NoSQL Database
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Tech Stacks -->
+        <section class="mb-5">
+            <h2><i class="fas fa-cubes text-danger"></i> Popular Technology Stacks</h2>
+            <p>Different combinations of technologies create different "stacks." Here are some popular examples:</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            <h4><i class="fab fa-node-js"></i> MEAN Stack</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-leaf text-success"></i> <strong>MongoDB:</strong> NoSQL Database</li>
+                                <li><i class="fas fa-server text-dark"></i> <strong>Express.js:</strong> Web Framework</li>
+                                <li><i class="fab fa-angular text-danger"></i> <strong>Angular:</strong> Frontend Framework</li>
+                                <li><i class="fab fa-node-js text-success"></i> <strong>Node.js:</strong> Runtime Environment</li>
+                            </ul>
+                            <p><small><strong>Advantage:</strong> JavaScript throughout the entire stack</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-info text-white">
+                            <h4><i class="fab fa-react"></i> MERN Stack</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-leaf text-success"></i> <strong>MongoDB:</strong> NoSQL Database</li>
+                                <li><i class="fas fa-server text-dark"></i> <strong>Express.js:</strong> Web Framework</li>
+                                <li><i class="fab fa-react text-info"></i> <strong>React:</strong> Frontend Library</li>
+                                <li><i class="fab fa-node-js text-success"></i> <strong>Node.js:</strong> Runtime Environment</li>
+                            </ul>
+                            <p><small><strong>Advantage:</strong> Component-based UI with React</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-warning text-dark">
+                            <h4><i class="fab fa-php"></i> LAMP Stack</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fab fa-linux text-dark"></i> <strong>Linux:</strong> Operating System</li>
+                                <li><i class="fas fa-server text-danger"></i> <strong>Apache:</strong> Web Server</li>
+                                <li><i class="fas fa-database text-primary"></i> <strong>MySQL:</strong> Database</li>
+                                <li><i class="fab fa-php text-purple"></i> <strong>PHP:</strong> Server Language</li>
+                            </ul>
+                            <p><small><strong>Advantage:</strong> Mature, well-documented, widely supported</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h4><i class="fab fa-python"></i> Django Stack</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fab fa-python text-warning"></i> <strong>Python:</strong> Programming Language</li>
+                                <li><i class="fas fa-cogs text-success"></i> <strong>Django:</strong> Web Framework</li>
+                                <li><i class="fas fa-database text-info"></i> <strong>PostgreSQL:</strong> Database</li>
+                                <li><i class="fab fa-html5 text-danger"></i> <strong>HTML/CSS/JS:</strong> Frontend</li>
+                            </ul>
+                            <p><small><strong>Advantage:</strong> "Batteries included" framework with ORM</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JSON API Example -->
+        <section class="mb-5">
+            <h2><i class="fas fa-exchange-alt text-info"></i> Client-Server Communication Example</h2>
+            <p>Full stack developers must understand how the front-end and back-end communicate. Here's an example of how data flows between client and server:</p>
+
+            <div class="code-block" data-lang="JSON">
+                <pre><code>// Example API Response from Server
+{
+  "status": "success",
+  "data": {
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "role": "developer",
+        "skills": ["JavaScript", "Python", "React"],
+        "experience": "3 years",
+        "projects": 15
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith", 
+        "email": "jane@example.com",
+        "role": "designer",
+        "skills": ["HTML", "CSS", "Figma"],
+        "experience": "2 years",
+        "projects": 22
+      }
+    ],
+    "total": 2,
+    "page": 1,
+    "limit": 10
+  },
+  "timestamp": "2025-01-15T10:30:00Z"
+}</code></pre>
+            </div>
+
+            <h3>How This Works:</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><i class="fas fa-arrow-up text-primary"></i> Client Request</h4>
+                    <ol>
+                        <li>User clicks "Load Users" button</li>
+                        <li>JavaScript sends HTTP GET request to <code>/api/users</code></li>
+                        <li>Request includes headers (authentication, content-type)</li>
+                        <li>Browser waits for server response</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h4><i class="fas fa-arrow-down text-success"></i> Server Response</h4>
+                    <ol>
+                        <li>Server receives request at API endpoint</li>
+                        <li>Server queries database for user data</li>
+                        <li>Data is formatted as JSON object</li>
+                        <li>Response sent back to client with status code</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Process -->
+        <section class="mb-5">
+            <h2><i class="fas fa-cogs text-success"></i> Full Stack Development Process</h2>
+            <p>Understanding the workflow is crucial for full stack developers:</p>
+
+            <div class="example-container">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-lightbulb fa-3x text-warning"></i>
+                        </div>
+                        <h4>1. Planning</h4>
+                        <p>Requirements gathering, architecture design, technology selection</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-database fa-3x text-info"></i>
+                        </div>
+                        <h4>2. Backend</h4>
+                        <p>Database design, API development, server logic implementation</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-palette fa-3x text-primary"></i>
+                        </div>
+                        <h4>3. Frontend</h4>
+                        <p>UI design, component development, API integration</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-rocket fa-3x text-success"></i>
+                        </div>
+                        <h4>4. Deployment</h4>
+                        <p>Testing, optimization, server deployment, monitoring</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills and Benefits -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2><i class="fas fa-star text-warning"></i> Key Skills Required</h2>
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <i class="fas fa-code text-primary"></i>
+                            <strong>Programming Languages:</strong> JavaScript, Python, Java, PHP
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fas fa-database text-success"></i>
+                            <strong>Database Management:</strong> SQL, NoSQL, data modeling
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fas fa-server text-info"></i>
+                            <strong>Server Management:</strong> Linux, cloud platforms, DevOps
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fas fa-git-alt text-warning"></i>
+                            <strong>Version Control:</strong> Git, collaborative development
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fas fa-shield-alt text-danger"></i>
+                            <strong>Security:</strong> Authentication, authorization, data protection
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2><i class="fas fa-trophy text-success"></i> Career Benefits</h2>
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <i class="fas fa-handshake text-primary"></i>
+                            <strong>Versatility:</strong> Can work on any part of an application
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fas fa-users text-success"></i>
+                            <strong>Collaboration:</strong> Better communication between teams
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fas fa-chart-line text-info"></i>
+                            <strong>Career Growth:</strong> High demand and competitive salaries
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fas fa-lightbulb text-warning"></i>
+                            <strong>Problem Solving:</strong> End-to-end solution development
+                        </div>
+                        <div class="list-group-item">
+                            <i class="fas fa-rocket text-danger"></i>
+                            <strong>Innovation:</strong> Ability to build complete products
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Trends -->
+        <section class="mb-5">
+            <h2><i class="fas fa-trending-up text-info"></i> Current Trends in Full Stack Development</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cloud fa-2x text-primary mb-3"></i>
+                            <h5>Cloud-Native</h5>
+                            <p>Serverless functions, microservices, containerization with Docker and Kubernetes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt fa-2x text-success mb-3"></i>
+                            <h5>Progressive Web Apps</h5>
+                            <p>Web applications that work offline and provide native app-like experiences</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-robot fa-2x text-warning mb-3"></i>
+                            <h5>AI Integration</h5>
+                            <p>Machine learning APIs, chatbots, and intelligent automation in web applications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="mb-5">
+            <div class="alert alert-primary">
+                <h3><i class="fas fa-graduation-cap"></i> Summary</h3>
+                <p><strong>Full Stack Development</strong> represents a comprehensive approach to web development that encompasses both client-side and server-side technologies. It requires understanding how different technologies work together to create complete web applications.</p>
+
+                <p>As demonstrated in this portfolio, mastering HTML, CSS, Bootstrap, and JavaScript provides the foundation for front-end development, while understanding backend concepts, APIs, and databases completes the full stack skillset.</p>
+
+                <p>The beauty of full stack development lies in the ability to see the "big picture" - understanding how user interactions on the frontend translate to data operations on the backend, and how to architect systems that are scalable, maintainable, and secure.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Full Stack Development ePortfolio. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>CET138 Full Stack Development Module</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

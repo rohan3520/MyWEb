@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - ePortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code"></i> My ePortfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack Development</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="html.html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Page Header -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4 fw-bold mb-3">
+                    <i class="fab fa-html5 text-danger"></i> HTML5 Mastery
+                </h1>
+                <p class="lead">From semantic markup to advanced HTML5 features</p>
+            </div>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class="mb-5">
+            <h2><i class="fas fa-info-circle text-info"></i> What is HTML?</h2>
+            <p><strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. It provides the structure and semantic meaning to web content through the use of elements and tags. HTML5, the latest version, introduces new semantic elements, multimedia support, and enhanced form controls.</p>
+
+            <div class="alert alert-info">
+                <i class="fas fa-lightbulb"></i>
+                <strong>Key Concept:</strong> HTML provides semantic meaning - it tells browsers and assistive technologies what different parts of your content represent, not just how they should look.
+            </div>
+        </section>
+
+        <!-- Basic HTML Structure -->
+        <section class="mb-5">
+            <h2><i class="fas fa-sitemap text-primary"></i> Basic HTML Document Structure</h2>
+
+            <div class="code-block" data-lang="HTML">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+    &lt;meta name="description" content="A brief description"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Main Content&lt;/h2&gt;
+            &lt;p&gt;Content goes here.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2025 My Website&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <h3>Key Elements Explained:</h3>
+            <ul>
+                <li><strong>&lt;!DOCTYPE html&gt;:</strong> Declares this as an HTML5 document</li>
+                <li><strong>&lt;html lang="en"&gt;:</strong> Root element with language attribute</li>
+                <li><strong>&lt;head&gt;:</strong> Contains metadata not visible to users</li>
+                <li><strong>&lt;body&gt;:</strong> Contains all visible content</li>
+                <li><strong>&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;:</strong> Semantic structure elements</li>
+            </ul>
+        </section>
+
+        <!-- Semantic HTML5 Elements -->
+        <section class="mb-5">
+            <h2><i class="fas fa-puzzle-piece text-success"></i> Semantic HTML5 Elements</h2>
+
+            <div class="example-container">
+                <article class="mb-4">
+                    <header>
+                        <h4>Understanding Semantic HTML</h4>
+                        <p><small>Published on <time datetime="2025-01-15">January 15, 2025</time></small></p>
+                    </header>
+
+                    <section>
+                        <p>Semantic HTML helps create more meaningful and accessible web content.</p>
+
+                        <figure class="text-center">
+                            <i class="fas fa-code fa-3x text-primary"></i>
+                            <figcaption class="mt-2"><em>Semantic elements provide structure</em></figcaption>
+                        </figure>
+                    </section>
+
+                    <aside class="bg-light p-3 border-start border-info border-5 my-3">
+                        <h6><i class="fas fa-info-circle text-info"></i> Did you know?</h6>
+                        <p>The &lt;aside&gt; element is perfect for supplementary content.</p>
+                    </aside>
+                </article>
+            </div>
+        </section>
+
+        <!-- HTML5 Forms -->
+        <section class="mb-5">
+            <h2><i class="fas fa-wpforms text-warning"></i> Advanced HTML5 Forms</h2>
+
+            <div class="example-container">
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Please provide a valid email.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="birthdate" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="birthdate">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="experience" class="form-label">Experience</label>
+                                <input type="range" class="form-range" id="experience" min="0" max="20" value="5">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="color" class="form-label">Favorite Color</label>
+                                <input type="color" class="form-control form-control-color" id="color">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="file" class="form-label">Upload File</label>
+                                <input type="file" class="form-control" id="file" multiple>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Canvas Demo -->
+        <section class="mb-5">
+            <h2><i class="fas fa-paint-brush text-primary"></i> HTML5 Canvas</h2>
+            <p>The &lt;canvas&gt; element provides a drawing surface for creating graphics dynamically.</p>
+
+            <div class="example-container">
+                <div class="text-center mb-3">
+                    <canvas id="drawingCanvas" class="canvas-demo" width="400" height="200"></canvas>
+                </div>
+                <div class="text-center">
+                    <button id="clearCanvas" class="btn btn-outline-secondary">Clear Canvas</button>
+                </div>
+                <p class="mt-2 text-center text-muted">Click and drag to draw!</p>
+            </div>
+
+            <div class="code-block" data-lang="JavaScript">
+                <pre><code>const canvas = document.getElementById('drawingCanvas');
+const ctx = canvas.getContext('2d');
+
+let isDrawing = false;
+
+canvas.addEventListener('mousedown', (e) => {
+    isDrawing = true;
+    ctx.beginPath();
+    ctx.moveTo(e.offsetX, e.offsetY);
+});
+
+canvas.addEventListener('mousemove', (e) => {
+    if (isDrawing) {
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+    }
+});
+
+canvas.addEventListener('mouseup', () => {
+    isDrawing = false;
+});</code></pre>
+            </div>
+        </section>
+
+        <!-- Data Attributes -->
+        <section class="mb-5">
+            <h2><i class="fas fa-tags text-info"></i> Data Attributes</h2>
+
+            <div class="example-container">
+                <div class="row" id="productGrid">
+                    <div class="col-md-4">
+                        <div class="card product-card" 
+                             data-product-id="1" 
+                             data-price="299.99" 
+                             data-category="electronics">
+                            <div class="card-body text-center">
+                                <i class="fas fa-laptop fa-3x text-primary mb-3"></i>
+                                <h5>Laptop</h5>
+                                <p>Price: $<span class="price"></span></p>
+                                <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="mb-5">
+            <div class="alert alert-primary">
+                <h3><i class="fas fa-graduation-cap"></i> HTML5 Summary</h3>
+                <p>HTML5 provides the structural foundation for modern web applications. Key features include semantic elements, enhanced forms, canvas graphics, and multimedia support.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Full Stack Development ePortfolio</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>CET138 Full Stack Development Module</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // Product data population
+        document.addEventListener('DOMContentLoaded', function() {
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                const price = card.dataset.price;
+                card.querySelector('.price').textContent = price;
+            });
+        });
+
+        function addToCart(button) {
+            const productCard = button.closest('.product-card');
+            const productId = productCard.dataset.productId;
+            const price = productCard.dataset.price;
+            alert(`Product ${productId} added to cart! Price: $${price}`);
+        }
+    </script>
+</body>
+</html>
