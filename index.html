@@ -1,175 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full Stack Development</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth; /* smooth scrolling */
-    }
-    section {
-      padding: 70px 0;
-    }
-    .navbar {
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .nav-link.active {
-      color: #ffc107 !important; /* Highlight active section in navbar */
-    }
-    footer {
-      background: #212529;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 - ePortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Full Stack Web Dev</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#fullstack">Full Stack</a></li>
-          <li class="nav-item"><a class="nav-link" href="#html">HTML</a></li>
-          <li class="nav-item"><a class="nav-link" href="#css">CSS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap</a></li>
-          <li class="nav-item"><a class="nav-link" href="#javascript">JavaScript</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <header class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Understanding Full Stack Development</h1>
-      <p class="lead">Static + Dynamic Web Applications using HTML, CSS, Bootstrap, and JavaScript</p>
-      <a href="#fullstack" class="btn btn-light btn-lg mt-3">Get Started</a>
-    </div>
-  </header>
-
-  <!-- Sections -->
-  <section id="fullstack">
-    <div class="container">
-      <h2 class="text-center mb-4">What is Full Stack Development?</h2>
-      <p>
-        Full Stack Development is the process of building both the <strong>frontend (client side)</strong> and 
-        the <strong>backend (server side)</strong> of a web application. 
-        It combines multiple technologies like HTML, CSS, JavaScript, databases, frameworks, and server-side languages.
-      </p>
-      <ul>
-        <li><strong>Frontend:</strong> Everything the user interacts with, like UI, buttons, and forms.</li>
-        <li><strong>Backend:</strong> Handles logic, database operations, and APIs.</li>
-        <li><strong>Database:</strong> Stores and manages data efficiently.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="html" class="bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">HTML</h2>
-      <p>
-        HTML (HyperText Markup Language) forms the backbone of all websites. It structures content into elements such as 
-        <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, and <code>&lt;img&gt;</code>.
-      </p>
-      <p>
-        Example:
-        <pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></pre>
-      </p>
-      <p>
-        Without HTML, browsers wouldn’t know how to display text, images, links, or multimedia content on a page.
-      </p>
-    </div>
-  </section>
-
-  <section id="css">
-    <div class="container">
-      <h2 class="text-center mb-4">CSS</h2>
-      <p>
-        CSS (Cascading Style Sheets) gives life to HTML by adding colors, layouts, fonts, and animations. 
-        It separates design from structure, making websites look attractive and user-friendly.
-      </p>
-      <p>
-        Example:
-        <pre><code>h1 { color: blue; font-size: 30px; }</code></pre>
-      </p>
-      <p>
-        With CSS, developers can create responsive designs that work seamlessly on mobile, tablet, and desktop devices.
-      </p>
-    </div>
-  </section>
-
-  <section id="bootstrap" class="bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Bootstrap Framework</h2>
-      <p>
-        Bootstrap is a popular framework that simplifies front-end development. It includes ready-to-use components, 
-        a powerful grid system, and JavaScript plugins for building modern, responsive websites quickly.
-      </p>
-      <div class="row text-center mt-4">
-        <div class="col-md-4">
-          <div class="card p-3 shadow-sm">
-            <h5>Responsive Grid</h5>
-            <p>Create flexible layouts with Bootstrap’s 12-column grid system.</p>
-          </div>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code"></i> My ePortfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack Development</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="css.html">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-4">
-          <div class="card p-3 shadow-sm">
-            <h5>Prebuilt Components</h5>
-            <p>Includes navbars, buttons, cards, forms, and more.</p>
-          </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Page Header -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4 fw-bold mb-3">
+                    <i class="fab fa-css3-alt text-info"></i> CSS3 Mastery
+                </h1>
+                <p class="lead">From basic styling to advanced layout and animations</p>
+            </div>
         </div>
-        <div class="col-md-4">
-          <div class="card p-3 shadow-sm">
-            <h5>Utility Classes</h5>
-            <p>Quickly apply margins, paddings, colors, and typography styles.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="javascript">
-    <div class="container">
-      <h2 class="text-center mb-4">JavaScript</h2>
-      <p>
-        JavaScript (JS) makes web pages <strong>dynamic and interactive</strong>. It can validate forms, create animations, 
-        fetch data from servers (AJAX), and build full-scale web applications using frameworks like React or Angular.
-      </p>
-      <p>
-        Example:
-        <pre><code>document.getElementById("demo").innerText = "Hello JS!";</code></pre>
-      </p>
-      <!-- Example Dynamic Feature -->
-      <div class="text-center mt-4">
-        <button class="btn btn-primary" onclick="showMessage()">Click Me!</button>
-        <p id="dynamicText" class="mt-3 fw-bold text-success"></p>
-      </div>
-    </div>
-  </section>
+        <!-- Introduction -->
+        <section class="mb-5">
+            <h2><i class="fas fa-info-circle text-info"></i> What is CSS?</h2>
+            <p><strong>CSS (Cascading Style Sheets)</strong> is a stylesheet language used to describe the presentation of HTML documents. CSS3, the latest version, introduces powerful features like Grid, Flexbox, animations, and custom properties that enable modern web design.</p>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Full Stack Development Demo by Rohan Khanal. All Rights Reserved.</p>
-  </footer>
+            <div class="alert alert-info">
+                <i class="fas fa-lightbulb"></i>
+                <strong>Key Concept:</strong> CSS separates content from presentation, allowing you to style multiple HTML pages with a single stylesheet while maintaining consistency and efficiency.
+            </div>
+        </section>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // JavaScript dynamic message
-    function showMessage() {
-      document.getElementById('dynamicText').innerText = "✅ You just triggered JavaScript!";
+        <!-- CSS Box Model -->
+        <section class="mb-5">
+            <h2><i class="fas fa-square text-primary"></i> The CSS Box Model</h2>
+            <p>Understanding the box model is fundamental to CSS layout. Every element is a rectangular box with content, padding, border, and margin.</p>
+
+            <div class="example-container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <div class="box-model-demo">Content</div>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <p><strong>Yellow:</strong> Content | <strong>Green:</strong> Padding | <strong>Blue:</strong> Border | <strong>Transparent:</strong> Margin</p>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="CSS">
+                <pre><code>.box-model-demo {
+    width: 200px;           /* Content width */
+    height: 100px;          /* Content height */
+    padding: 20px;          /* Space inside border */
+    border: 10px solid #007bff; /* Border thickness and style */
+    margin: 20px;           /* Space outside border */
+    background: #ffc107;    /* Background color */
+
+    /* Box-sizing controls how dimensions are calculated */
+    box-sizing: border-box; /* Include padding and border in dimensions */
+}</code></pre>
+            </div>
+
+            <h3>Box-Sizing Property:</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>content-box (default)</h5>
+                    <p>Width and height apply only to content. Padding and border are added to the total size.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>border-box</h5>
+                    <p>Width and height include content, padding, and border. More predictable for layout.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CSS Grid -->
+        <section class="mb-5">
+            <h2><i class="fas fa-th text-success"></i> CSS Grid Layout</h2>
+            <p>CSS Grid is a powerful 2-dimensional layout system that allows precise control over both rows and columns.</p>
+
+            <div class="example-container">
+                <div class="grid-demo">
+                    <div class="grid-item">Header</div>
+                    <div class="grid-item">Sidebar</div>
+                    <div class="grid-item">Main</div>
+                    <div class="grid-item">Footer</div>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="CSS">
+                <pre><code>.grid-demo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid-item {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* Advanced Grid Example */
+.advanced-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 20px;
+    min-height: 100vh;
+}</code></pre>
+            </div>
+
+            <h3>Grid Properties Explained:</h3>
+            <ul>
+                <li><strong>display: grid:</strong> Creates a grid container</li>
+                <li><strong>grid-template-columns:</strong> Defines column sizes and number</li>
+                <li><strong>grid-template-rows:</strong> Defines row sizes and number</li>
+                <li><strong>gap:</strong> Sets spacing between grid items</li>
+                <li><strong>grid-template-areas:</strong> Names grid areas for semantic layout</li>
+            </ul>
+        </section>
+
+        <!-- Flexbox -->
+        <section class="mb-5">
+            <h2><i class="fas fa-arrows-alt text-warning"></i> Flexbox Layout</h2>
+            <p>Flexbox is perfect for 1-dimensional layouts, providing flexible alignment and distribution of space.</p>
+
+            <div class="example-container">
+                <div class="flex-demo">
+                    <div class="flex-item">Item 1</div>
+                    <div class="flex-item">Item 2</div>
+                    <div class="flex-item">Item 3</div>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="CSS">
+                <pre><code>.flex-demo {
+    display: flex;
+    justify-content: space-between; /* Horizontal alignment */
+    align-items: center;            /* Vertical alignment */
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;               /* Allow wrapping */
+}
+
+.flex-item {
+    background: linear-gradient(135deg, #f7b733 0%, #fc4a1a 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    flex: 1;                       /* Grow to fill space */
+    text-align: center;
+    min-width: 120px;
+}
+
+/* Flexbox Properties */
+.flex-container {
+    display: flex;
+    flex-direction: row;           /* row | column */
+    justify-content: flex-start;   /* main axis alignment */
+    align-items: stretch;          /* cross axis alignment */
+    flex-wrap: nowrap;            /* wrap | nowrap */
+}</code></pre>
+            </div>
+
+            <h3>Flexbox vs Grid:</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Use Flexbox for:</h5>
+                    <ul>
+                        <li>Navigation bars</li>
+                        <li>Centering content</li>
+                        <li>Distributing space evenly</li>
+                        <li>One-dimensional layouts</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Use Grid for:</h5>
+                    <ul>
+                        <li>Complex page layouts</li>
+                        <li>Two-dimensional control</li>
+                        <li>Overlapping elements</li>
+                        <li>Magazine-style layouts</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CSS Animations -->
+        <section class="mb-5">
+            <h2><i class="fas fa-magic text-danger"></i> CSS Animations</h2>
+            <p>CSS animations bring life to web pages without JavaScript. From simple transitions to complex keyframe animations.</p>
+
+            <div class="example-container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h5>Loading Spinner</h5>
+                        <div class="css-spinner"></div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h5>Hover Transform</h5>
+                        <div class="card hover-transform">
+                            <div class="card-body">
+                                <p>Hover me!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h5>Pulse Animation</h5>
+                        <button class="btn btn-primary" style="animation: pulse 2s infinite;">Pulsing Button</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="CSS">
+                <pre><code>/* Keyframe Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.css-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Transition on Hover */
+.hover-transform {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-transform:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- CSS Variables -->
+        <section class="mb-5">
+            <h2><i class="fas fa-cogs text-info"></i> CSS Custom Properties (Variables)</h2>
+            <p>CSS variables enable dynamic theming and reduce code duplication by storing reusable values.</p>
+
+            <div class="example-container">
+                <div class="mb-3">
+                    <label for="primaryColorPicker" class="form-label">Change Primary Color:</label>
+                    <input type="color" id="primaryColorPicker" class="form-control form-control-color" value="#0d6efd">
+                    <button id="resetColors" class="btn btn-outline-secondary btn-sm mt-2">Reset</button>
+                </div>
+
+                <div class="card" id="variableDemo">
+                    <div class="card-header bg-primary text-white">
+                        <h5>Dynamic Theme Example</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This card uses CSS variables for theming. Change the color above to see it update!</p>
+                        <button class="btn btn-primary">Primary Button</button>
+                        <button class="btn btn-outline-primary">Outline Button</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="CSS">
+                <pre><code>/* Define CSS Variables in :root */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --border-radius: 15px;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Use Variables Throughout CSS */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.card {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* JavaScript can update CSS variables */
+document.documentElement.style.setProperty('--primary-color', '#dc3545');</code></pre>
+            </div>
+
+            <h3>Benefits of CSS Variables:</h3>
+            <ul>
+                <li>Dynamic theming without recompiling</li>
+                <li>Reduced code duplication</li>
+                <li>JavaScript can modify values in real-time</li>
+                <li>Scoped to specific elements or global</li>
+                <li>Better maintainability</li>
+            </ul>
+        </section>
+
+        <!-- Responsive Design -->
+        <section class="mb-5">
+            <h2><i class="fas fa-mobile-alt text-success"></i> Responsive Design</h2>
+            <p>CSS media queries and flexible layouts ensure websites work across all devices and screen sizes.</p>
+
+            <div class="code-block" data-lang="CSS">
+                <pre><code>/* Mobile First Approach */
+.responsive-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .responsive-grid {
+        grid-template-columns: 1fr 1fr;
     }
-  </script>
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .responsive-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Container Queries (Modern) */
+@container (min-width: 400px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Responsive Typography */
+.responsive-text {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+/* Print Styles */
+@media print {
+    .no-print { display: none; }
+    body { font-size: 12pt; }
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Advanced Selectors -->
+        <section class="mb-5">
+            <h2><i class="fas fa-crosshairs text-warning"></i> Advanced CSS Selectors</h2>
+            <p>CSS provides powerful selectors for precise targeting of elements without adding extra HTML classes.</p>
+
+            <div class="example-container">
+                <div class="selector-demo">
+                    <h5>Selector Examples</h5>
+                    <ul class="list-unstyled">
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                        <li>Fourth item</li>
+                        <li>Last item</li>
+                    </ul>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Focus me" class="form-control mb-2">
+                        <input type="email" placeholder="Email input" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block" data-lang="CSS">
+                <pre><code>/* Pseudo-class Selectors */
+li:first-child { color: #007bff; }
+li:last-child { color: #dc3545; }
+li:nth-child(odd) { background: #f8f9fa; }
+li:nth-child(3n) { font-weight: bold; }
+
+/* Attribute Selectors */
+input[type="email"] { border-left: 4px solid #17a2b8; }
+input[placeholder*="Focus"] { border-color: #28a745; }
+
+/* Pseudo-element Selectors */
+h5::before {
+    content: "→ ";
+    color: #007bff;
+}
+
+/* Combinators */
+.form-group > input { margin-bottom: 10px; }
+input + input { margin-top: 5px; }
+h5 ~ ul { margin-top: 1rem; }
+
+/* Advanced Pseudo-classes */
+:focus-within { outline: 2px solid #007bff; }
+:not(.excluded) { opacity: 1; }
+:has(> .special) { background: yellow; }</code></pre>
+            </div>
+        </section>
+
+        <!-- CSS Architecture -->
+        <section class="mb-5">
+            <h2><i class="fas fa-sitemap text-primary"></i> CSS Architecture and Best Practices</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>BEM Methodology</h5>
+                    <div class="code-block" data-lang="CSS">
+                        <pre><code>/* Block */
+.card { }
+
+/* Element */
+.card__header { }
+.card__body { }
+.card__footer { }
+
+/* Modifier */
+.card--featured { }
+.card--large { }
+.card__header--dark { }</code></pre>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h5>CSS Organization</h5>
+                    <div class="code-block" data-lang="CSS">
+                        <pre><code>/* 1. Variables */
+:root { --primary: #007bff; }
+
+/* 2. Base styles */
+* { box-sizing: border-box; }
+
+/* 3. Layout */
+.container { max-width: 1200px; }
+
+/* 4. Components */
+.btn { padding: 0.5rem 1rem; }
+
+/* 5. Utilities */
+.text-center { text-align: center; }</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Performance Best Practices:</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Minimize CSS file size</li>
+                        <li>Use efficient selectors</li>
+                        <li>Avoid deep nesting</li>
+                        <li>Leverage CSS caching</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>Critical CSS for above-fold content</li>
+                        <li>Use CSS containment</li>
+                        <li>Optimize for paint and layout</li>
+                        <li>Consider CSS-in-JS for components</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern CSS Features -->
+        <section class="mb-5">
+            <h2><i class="fas fa-rocket text-danger"></i> Modern CSS Features</h2>
+
+            <div class="code-block" data-lang="CSS">
+                <pre><code>/* CSS Subgrid */
+.subgrid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.subgrid-item {
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+/* CSS Logical Properties */
+.logical-spacing {
+    margin-block-start: 1rem;
+    margin-inline-end: 2rem;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+}
+
+/* CSS Shapes */
+.shape-outside {
+    width: 150px;
+    height: 150px;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+}
+
+/* CSS Scroll Snap */
+.scroll-container {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+}
+
+.scroll-item {
+    scroll-snap-align: start;
+}
+
+/* CSS Backdrop Filter */
+.glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="mb-5">
+            <div class="alert alert-primary">
+                <h3><i class="fas fa-graduation-cap"></i> CSS3 Summary</h3>
+                <p><strong>CSS3</strong> transforms static HTML into beautiful, interactive web experiences. From layout systems like Grid and Flexbox to animations and custom properties, CSS3 provides the tools for modern web design.</p>
+
+                <p>Key takeaways:</p>
+                <ul>
+                    <li><strong>Box Model:</strong> Understanding spacing and sizing fundamentals</li>
+                    <li><strong>Layout Systems:</strong> Grid for 2D layouts, Flexbox for 1D layouts</li>
+                    <li><strong>Animations:</strong> Bringing interfaces to life with CSS animations</li>
+                    <li><strong>Variables:</strong> Dynamic theming with CSS custom properties</li>
+                    <li><strong>Responsive Design:</strong> Creating layouts that work on all devices</li>
+                    <li><strong>Performance:</strong> Writing efficient, maintainable CSS</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Full Stack Development ePortfolio by Rohan Khanal</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>CET138 Full Stack Development Module</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        .selector-demo li:first-child { color: #007bff; font-weight: bold; }
+        .selector-demo li:last-child { color: #dc3545; font-weight: bold; }
+        .selector-demo li:nth-child(odd) { background: #f8f9fa; padding: 0.25rem; }
+        .selector-demo input[type="email"] { border-left: 4px solid #17a2b8; }
+        .selector-demo h5::before { content: "→ "; color: #007bff; }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
 </body>
 </html>
